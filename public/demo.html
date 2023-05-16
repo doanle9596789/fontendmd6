@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estate</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<section id="header_main" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 space_all">
+                <div class="col-sm-4 space_all">
+                    <div class="header_main_1">
+                        <ul>
+                            <li><i class="fa fa-phone"></i><a href="#">+123 456 78 90</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">info@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 space_all">
+                    <div class="header_main_2">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="header_main_4">
+                        <ul class="nav navbar-nav navbar nav_2">
+                            <div class="login">
+                                <ul class="nav-login">
+                                    <li class="tell_main_8"><a href="#" data-toggle="modal" data-target="#myModal1">Login</a>
+                                    </li>
+                                    <li class="tell_main_9"><a href="#" data-toggle="modal" data-target="#myModal2">Signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content modal-info">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body modal-spa">
+                                            <div class="login-grids">
+
+                                                <div class="login-right">
+                                                    <form action="#" method="post">
+                                                        <h3>Signin with your account </h3>
+                                                        <input type="text" value="Enter your mobile number or Email"
+                                                               name=" Email" onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}"
+                                                               required="">
+                                                        <input type="password" value="Password" name="Password"
+                                                               onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Password';}"
+                                                               required="">
+                                                        <h4><a href="#">Forgot password</a> / <a href="#">Create new
+                                                            password</a></h4>
+                                                        <div class="single-bottom">
+                                                            <input type="checkbox" id="brand" value="">
+                                                            <label for="brand"><span></span>Remember Me.</label>
+                                                        </div>
+                                                        <input type="submit" value="SIGNIN">
+                                                    </form>
+                                                </div>
+
+                                                <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                                                    <span>Privacy Policy</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //login -->
+                            <!-- signup -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content modal-info">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body modal-spa">
+                                            <div class="login-grids">
+                                                <div class="login-right">
+                                                    <form action="#" method="post">
+                                                        <h3>Create your account </h3>
+                                                        <input type="text" value="Name" name="Name"
+                                                               onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Name';}"
+                                                               required="">
+                                                        <input type="text" value="Mobile number" name="Mobile number"
+                                                               onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Mobile number';}"
+                                                               required="">
+                                                        <input type="text" value="Email id" name="Email id"
+                                                               onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Email id';}"
+                                                               required="">
+                                                        <input type="password" value="Password" name="Password"
+                                                               onfocus="this.value = '';"
+                                                               onblur="if (this.value == '') {this.value = 'Password';}"
+                                                               required="">
+                                                        <input type="submit" value="CREATE ACCOUNT">
+                                                    </form>
+                                                </div>
+                                                <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                                                    <span>Privacy Policy</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 space_all">
+                    <div class="header_main_3">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facbook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="header" class="cd-secondary-nav">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#dropdown-thumbnail-preview">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="demo.html"><span class="well_1"><i class="fa fa-home"></i></span>ESTATE</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="demo.html" class="hvr-underline-from-center">HOME</a></li>
+                        <li><a href="about.html" class="hvr-underline-from-center">ABOUT</a></li>
+                        <li class="dropdown">
+                            <a href="property.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">PROPERTY <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="tell_1"><a href="property.html">PROPERTY LISTING</a></li>
+                                <li class="tell_1"><a href="property_details.html">PROPERTY DETAILS</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="team.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">TEAM <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="tell_1"><a href="team.html">TEAM LISTING</a></li>
+                                <li class="tell_1"><a href="team_details.html">TEAM DETAILS</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="blog.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">BLOG<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="tell_1"><a href="blog.html">BLOG LISTING</a></li>
+                                <li class="tell_1"><a href="blog_details.html">BLOG DETAILS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="hvr-wobble-to-top-right" data-toggle="dropdown">DROPDOWN <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="tell_1"><a href="gallery.html">GALLERY</a></li>
+                                <li class="tell_1"><a href="about.html">ABOUT</a></li>
+                                <li><a href="services.html">SERVICES</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+</section>
+<section id="center">
+    <div class="center">
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+            <div class="overlay"></div>
+            <ol class="carousel-indicators">
+                <li data-target="#bs-carousel" data-slide-to="0" class=""></li>
+                <li data-target="#bs-carousel" data-slide-to="1" class=""></li>
+                <li data-target="#bs-carousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item slides">
+                    <div class="slide-1"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Sed Dignissim Lacinia</h1>
+                            <h3>Vestibulum Lacinia Arcu Eget</h3>
+                            <h4><a href="#">CONUDIA NOSTRA</a></h4>
+                        </hgroup>
+                    </div>
+                </div>
+                <div class="item slides">
+                    <div class="slide-2"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Torquent Per Conubia Nostra</h1>
+                            <h3>Vestibulum Lacinia Arcu Eget</h3>
+                            <h4><a href="#">CONUDIA NOSTRA</a></h4>
+                        </hgroup>
+                    </div>
+                </div>
+                <div class="item slides active">
+                    <div class="slide-3"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Fusce Nec Tellus Sed Augue</h1>
+                            <h3>Vestibulum Lacinia Arcu Eget</h3>
+                            <h4><a href="#">CONUDIA NOSTRA</a></h4>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="middle">
+    <div class="container">
+        <div class="row">
+            <div class="middle_1">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <div class="middle_2 clearfix">
+                        <div class="col-sm-12">
+                            <div class="middle_main clearfix">
+                                <h3>PROPERTY SEARCH</h3>
+                                <div class="line_center line width-50 clearfix">
+                                    <div class="line_inner width-70 clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="middle_3">
+                                    <div class="controls clearfix">
+                                        <select class="span3" name="expiry_month" id="expiry">
+                                            <option>Location</option>
+                                            <option value="01">Alabama</option>
+                                            <option value="02">Alaska</option>
+                                            <option value="03">California</option>
+                                            <option value="04">Colorado</option>
+                                            <option value="05">Delaware</option>
+                                            <option value="06">District of Columbia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="middle_3">
+                                    <div class="controls clearfix">
+                                        <select class="span3" name="expiry_month" id="expiry_">
+                                            <option>Bedroom</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="middle_3">
+                                    <input type="text" class="form-control" name="First Name"
+                                           placeholder="Squre Fit Min" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="middle_4">
+                                    <div class="controls clearfix">
+                                        <select class="span3" name="expiry_month" id="expiry_monh">
+                                            <option>Property Status</option>
+                                            <option value="01">For Sale</option>
+                                            <option value="02">For Rent</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="middle_4">
+                                    <div class="controls clearfix">
+                                        <select class="span3" name="expiry_month" id="expiry_month">
+                                            <option>Bathroom</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="02">3</option>
+                                            <option value="02">4</option>
+                                            <option value="02">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="middle_4">
+                                    <input type="text" class="form-control" name="First Name"
+                                           placeholder="Squre Fit Min" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="middle_5 clearfix">
+                                    <p><a href="#" class="button">Search</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="available">
+    <div class="container">
+        <div class="row">
+            <div class="available_1 clearfix">
+                <div class="col-sm-8">
+                    <div class="available_2">
+                        <h1>FEW DESCRIPTION</h1>
+                        <h2>ABOUT HOMY</h2>
+                        <h5>REAL ESTATE</h5>
+                    </div>
+                    <div class="available_3">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected
+                            humour, or randomised words which don't look even slightly believable. If you are going to
+                            use a passage of Lorem Ipsum.</p>
+
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour,
+                            or randomised words which don't look even slightly believable. If you are going to use a
+                            passage of Lorem Ipsum.</p>
+
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour,
+                            or randomised words which don't look even slightly believable. If you are going to use a
+                            passage of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="available_4">
+                        <a href="#"><img src="img/4.png" alt="#" class="img_responsive"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="book" class="clearfix">
+    <div class="book_1">
+        <div class="col-sm-6 space_all">
+            <div class="book_2">
+                <h5>BOOK YOUR</h5>
+                <h3>APPARTMENT OR HOUSE</h3>
+            </div>
+        </div>
+        <div class="col-sm-6 space_all">
+            <div class="book_3">
+                <h3>WE ARE READY TO RECEIVE YOUR CALL</h3>
+                <h4>+1234 567 123</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="property">
+    <div class="container">
+        <div class="row">
+            <div class="property_1">
+                <h2>AWESOME <a href="#">PROPERTY</a></h2>
+                <div class="line width-10 clearfix">
+                    <div class="line_inner width-70 clearfix"></div>
+                </div>
+            </div>
+            <div class="property_3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores</p>
+            </div>
+            <div class="col-sm-12 space_all">
+                <div class="blog_home1">
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/5.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent</a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Sale</span> <span class="year">$59,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/6.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent </a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Rent</span> <span class="year">$79,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/7.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent</a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Sale</span> <span class="year">$89,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 space_all">
+                <div class="blog_home1">
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/31.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent</a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Sale</span> <span class="year">$59,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/32.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent </a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Rent</span> <span class="year">$79,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog_home1i clearfix">
+                            <a href="#"><img src="img/33.jpg" alt="abc" class="img_responsive"></a>
+                            <div class="blog_home1ii clearfix">
+                                <h4><a href="#">Gardening the Global Greenhouse by Richard Bisgrove..</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-user"></i> By <a href="#"> Aptent</a></li>
+                                    <li><i class="fa fa-comment"></i> <a href="#">0 comment</a></li>
+                                </ul>
+                                <p>Lorem Ipsum by the readable content of a page when looking at its layout. The point
+                                    of using Lorem Ipsum <a href="#">Read More</a></p>
+                            </div>
+                            <div class="blog_home1il clearfix">
+                                <h6 class="mgt"><span class="date">For Sale</span> <span class="year">$89,999</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="property_2">
+                            <ul>
+                                <li><i class="fa fa-object-group"></i></li>
+                                <li> 520 sq ft</li>
+                                <li><i class="fa fa-bed"></i></li>
+                                <li>6</li>
+                                <li><i class="fa fa-home"></i></li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="our">
+    <div class="container">
+        <div class="row">
+            <div class="our_1">
+                <h2>OUR VALUABLE <a href="#">AGENTS</a></h2>
+                <div class="line_center line width-10 clearfix">
+                    <div class="line_center_1 line_inner width-40 clearfix"></div>
+                </div>
+            </div>
+            <div class="our_2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores<br/> voluptatem
+                    porro tempore temporibus ducimus</p>
+            </div>
+            <div class="our_3 clearfix">
+                <div class="col-sm-3">
+                    <div class="our_4">
+                        <a href="#"><img src="img/8.png" alt="abc" class="img_responsive"></a>
+                    </div>
+                    <div class="our_5 clearfix">
+                        <h4><a href="#">Fusce Nec</a></h4>
+                        <p>Sed dignissim</p>
+                    </div>
+                    <div class="our_6">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                        <p>+123 4567 1234</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our_4">
+                        <a href="#"><img src="img/9.png" alt="abc" class="img_responsive"></a>
+                    </div>
+                    <div class="our_5 clearfix">
+                        <h4><a href="#">Sed Cursus</a></h4>
+                        <p>lacinia arcu</p>
+                    </div>
+                    <div class="our_6">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                        <p>+123 4567 1234</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our_4">
+                        <a href="#"><img src="img/10.png" alt="abc" class="img_responsive"></a>
+                    </div>
+                    <div class="our_5 clearfix">
+                        <h4><a href="#">Integer Nec</a></h4>
+                        <p>Duis sagittis</p>
+                    </div>
+                    <div class="our_6">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                        <p>+123 4567 1234</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our_4">
+                        <a href="#"><img src="img/11.png" alt="abc" class="img_responsive"></a>
+                    </div>
+                    <div class="our_5 clearfix">
+                        <h4><a href="#">Nulla Quis</a></h4>
+                        <p>nibh elementum</p>
+                    </div>
+                    <div class="our_6">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                        <p>+123 4567 1234</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="our_blog">
+    <div class="container">
+        <div class="row">
+            <div class="our_blog_1">
+                <h2>OUR <a href="#">BLOG</a></h2>
+                <div class="line width-9 clearfix">
+                    <div class="line_inner width-40 clearfix"></div>
+                </div>
+            </div>
+            <div class="our_blog_2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores<br/> voluptatem
+                    porro tempore temporibus ducimus</p>
+            </div>
+            <div class="our_blog_3 clearfix">
+                <div class="col-sm-4">
+                    <div class="our_blog_4">
+                        <div class="ih-item square effect14 left_to_right"><a href="#">
+                            <div class="img"><img src="img/12.jpg" alt="img"></div>
+                            <div class="info">
+                                <h3>Heading here</h3>
+                                <p>Description goes here</p>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div class="our_blog_5 clearfix">
+                        <h4><a href="#">latest design of house</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="our_blog_4">
+                        <div class="ih-item square effect14 left_to_right"><a href="#">
+                            <div class="img"><img src="img/13.jpg" alt="img"></div>
+                            <div class="info">
+                                <h3>Heading here</h3>
+                                <p>Description goes here</p>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div class="our_blog_5 clearfix">
+                        <h4><a href="#">latest design of house</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="our_blog_4">
+                        <div class="ih-item square effect14 left_to_right"><a href="#">
+                            <div class="img"><img src="img/14.jpg" alt="img"></div>
+                            <div class="info">
+                                <h3>Heading here</h3>
+                                <p>Description goes here</p>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div class="our_blog_5 clearfix">
+                        <h4><a href="#">latest design of house</a></h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="news">
+    <div class="news_main clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="news_1 clearfix">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="news_2">
+                            <h2>SUBSCRIBE<a href="#"> NEWSLETTER</a></h2>
+                            <p>consectetur adipisicing elit. Beatae ducimus in enim quae</p>
+                        </div>
+                        <div class="news_3">
+                            <div class="input-group" id="adv-search">
+                                <input type="text" class="form-control" placeholder="Enter Your Email">
+                                <div class="input-group-btn">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-primary">SUBSCRIBE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="footer_inner clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <div class="footer_main clearfix">
+                            <div class="footer_1">
+                                <h3>FUSCE NEC TELLUS</h3>
+                                <p>11/4 Lacinia:</p>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/44.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_3">
+                                        <p>+2-123-456-7890</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/45.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_3">
+                                        <p>+2-123-456-7890</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/46.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_3">
+                                        <p>+2-123-456-7890</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_4">
+                            <p><i class="fa fa-skype"></i>Conubia_India</p>
+                            <h5><i class="fa fa-envelope"></i><a href="#">info@gmail.com</a></h5>
+                        </div>
+                        <div class="footer_5">
+                            <h5><a href="#">CONUBIA NOSTRA</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer_9 clearfix">
+                            <div class="colsm-12 space_all">
+                                <div class="col-sm-6 space_all">
+                                    <div class="footer_6">
+                                        <h3>LACINIA</h3>
+                                        <ul>
+                                            <li><a href="#">Curabitursodales Ligula</a></li>
+                                            <li><a href="#">Dignissim Lacinia</a></li>
+                                            <li><a href="#">Vestibulum Lacinia Arcu Eget</a></li>
+                                            <li><a href="#">Fusce Nec Tellus Sed Augue</a></li>
+                                            <li><a href="#">Cursus Ante Dapibus</a></li>
+                                            <li><a href="#">Praesent Mauris</a></li>
+                                            <li><a href="#">Curabitursodales</a></li>
+                                            <li><a href="#">Dignissim Lacinia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 space_all">
+                                    <div class="footer_6">
+                                        <h3>PARTNERS DAPIBUS</h3>
+                                        <ul>
+                                            <li><a href="#">Dignissim Lacinia</a></li>
+                                            <li><a href="#">Curabitursodales</a></li>
+                                            <li><a href="#">Praesent Mauris</a></li>
+                                            <li><a href="#">Cursus Ante Dapibus</a></li>
+                                            <li><a href="#">Fusce Nec Tellus Sed Augue</a></li>
+                                            <li><a href="#">Vestibulum Lacinia Arcu Eget</a></li>
+                                            <li><a href="#">Dignissim Lacinia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footer_7">
+                            <h3>CONUBIA NOSTRA</h3>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/44.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_8">
+                                        <p>12345 torquent per conubia inceptos.Curabitursodales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/45.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_8">
+                                        <p>Fusce nec tellus sed augue semper porta </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="col-sm-1 space_all">
+                                    <div class="footer_2">
+                                        <p><img src="img/46.jpg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 space_all">
+                                    <div class="footer_8">
+                                        <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="footer_14 clearfix">
+                                    <div class="col-sm-8 space_all">
+                                        <div class="footer_11">
+                                            <p>Dapibus Lacinia</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 space_all">
+                                        <div class="footer_12">
+                                            <p><i class="fa fa-picture-o"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 space_all">
+                                        <div class="footer_13">
+                                            <p><i class="fa fa-book"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 space_all">
+                                <div class="footer_15 clearfix">
+                                    <ul>
+                                        <li><a href="#">Blog Post</a></li>
+                                        <li>!</li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li>!</li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 space_all">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="footer_10">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paragraph"></i></a></li>
+                            </ul>
+                            <p class="text-center">© 2013 Your Website Name. All Rights Reserved. Design by<a
+                                    href="http://www.TemplateOnWeb.com"> Template On Web</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        /*****Fixed Menu******/
+        var secondaryNav = $('.cd-secondary-nav'),
+            secondaryNavTopPosition = secondaryNav.offset().top;
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > secondaryNavTopPosition) {
+                secondaryNav.addClass('is-fixed');
+            } else {
+                secondaryNav.removeClass('is-fixed');
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

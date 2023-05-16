@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estate</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+	<link href="css/property_details.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+   <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+<body>
+<section id="header_main" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12 space_all">
+    <div class="col-sm-4 space_all">
+     <div class="header_main_1">
+       <ul>
+	        <li><i class="fa fa-phone"></i><a href="#">+123 456 78 90</a></li>
+			<li><i class="fa fa-envelope"></i><a href="#">info@gmail.com</a></li>
+	   </ul>
+     </div>
+    </div>
+    <div class="col-sm-3 space_all">
+     <div class="header_main_2">
+      <div id="custom-search-input">
+        <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+       </div>
+     </div>
+    </div>
+	<div class="col-sm-3">
+	 <div class="header_main_4">
+	  <ul class="nav navbar-nav navbar nav_2">			
+	  <div class="login">
+				<ul class="nav-login">
+					<li class="tell_main_8"><a href="#" data-toggle="modal" data-target="#myModal1">Login</a></li>
+					<li class="tell_main_9"><a href="#" data-toggle="modal" data-target="#myModal2">Signup</a></li>
+				</ul>
+			</div>
+	  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+							
+									<div class="login-right">
+										<form action="#" method="post">
+											<h3>Signin with your account </h3>
+											<input type="text" value="Enter your mobile number or Email" name=" Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
+											<div class="single-bottom">
+												<input type="checkbox" id="brand" value="">
+												<label for="brand"><span></span>Remember Me.</label>
+											</div>
+											<input type="submit" value="SIGNIN">
+										</form>
+									</div>
+									
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //login -->
+			<!-- signup -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">							
+									<div class="login-right">
+										<form action="#" method="post">
+											<h3>Create your account </h3>
+											<input type="text" value="Name" name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+											<input type="text" value="Mobile number" name="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+											<input type="text" value="Email id" name="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
+											<input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">												
+											<input type="submit" value="CREATE ACCOUNT">
+										</form>
+									</div>								
+								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </ul>
+	 </div>
+	</div>
+    <div class="col-sm-2 space_all">
+     <div class="header_main_3">
+      <ul>
+           <li><a href="#"><i class="fa fa-facbook"></i></a></li>
+		   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		   <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+		   <li><a href="#"><i class="fa fa-google"></i></a></li>
+		   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>		   
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="header" class="cd-secondary-nav">
+ <div class="container">
+  <div class="row">
+   <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdown-thumbnail-preview">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="demo.html"><span class="well_1"><i class="fa fa-home"></i></span>ESTATE</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="demo.html" class="hvr-underline-from-center">HOME</a></li>
+		<li><a href="about.html" class="hvr-underline-from-center">ABOUT</a></li>
+		<li class="dropdown">
+		<a href="property.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">PROPERTY <b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			 <li class="tell_1"><a href="property.html">PROPERTY LISTING</a></li>
+			 <li class="tell_1"><a href="property_details.html">PROPERTY DETAILS</a></li>		 
+		  </ul>
+		</li>
+		<li class="dropdown">
+		<a href="team.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">TEAM <b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			 <li class="tell_1"><a href="team.html">TEAM LISTING</a></li>
+			 <li class="tell_1"><a href="team_details.html">TEAM DETAILS</a></li>		 
+		  </ul>
+		</li>
+		<li class="dropdown">
+		<a href="blog.html" class="hvr-wobble-to-top-right" data-toggle="dropdown">BLOG<b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			 <li class="tell_1"><a href="blog.html">BLOG LISTING</a></li>
+			 <li class="tell_1"><a href="blog_details.html">BLOG DETAILS</a></li>		 
+		  </ul>
+		</li>
+		<li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+        <li class="dropdown">
+		<a href="#" class="hvr-wobble-to-top-right" data-toggle="dropdown">DROPDOWN <b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			 <li class="tell_1"><a href="gallery.html">GALLERY</a></li>
+			 <li class="tell_1"><a href="about.html">ABOUT</a></li>
+		     <li><a href="services.html">SERVICES</a></li>			 
+		  </ul>
+		</li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+  </div>
+ </div>
+</section>
+<section id="listing_main">
+ <div class="container">
+  <div class="row">
+   <div class="listing_main_1">
+    <h2>PROPERTY DETAILS</h2>
+	<p><a href="#"> HOME </a> <i class="fa fa-angle-double-right"></i> <a href="#"> PROPERTY DETAILS </a></p>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="listing_details">
+ <div class="container">
+  <div class="row">
+   <div class="listing_details_1 clearfix">
+   <div class="col-sm-8">
+     <div class="listing_details_1 clearfix">
+      <div class="carousel slide article-slide" id="article-photo-carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+    <div class="item">
+     <div class="magnify clearfix"><img data-toggle="magnify" src="img/34.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+    <div class="item">
+      <div class="magnify clearfix"><img data-toggle="magnify" src="img/35.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+    <div class="item">
+      <div class="magnify clearfix"><img data-toggle="magnify" src="img/36.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+    <div class="item active">
+      <div class="magnify clearfix"><img data-toggle="magnify" src="img/37.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+	<div class="item">
+      <div class="magnify clearfix"><img data-toggle="magnify" src="img/38.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+	<div class="item">
+      <div class="magnify clearfix"><img data-toggle="magnify" src="img/39.jpg" width="100%" height="400px" alt=""><div class="magnify-large" style="background: url(&quot;http://i.imgur.com/1fgr2IO.jpg&quot;) no-repeat;"></div></div>
+    </div>
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li class="" data-slide-to="0" data-target="#article-photo-carousel">
+      <img alt="" src="img/40.jpg">
+    </li>
+    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+      <img alt="" src="img/41.jpg">
+    </li>
+    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+      <img alt="" src="img/42.jpg">
+    </li>
+    <li class="active" data-slide-to="3" data-target="#article-photo-carousel">
+      <img alt="" src="img/43.jpg">
+    </li>
+	<li class="" data-slide-to="4" data-target="#article-photo-carousel">
+      <img alt="" src="img/47.jpg">
+    </li>
+	<li class="" data-slide-to="5" data-target="#article-photo-carousel">
+      <img alt="" src="img/48.jpg">
+    </li>
+  </ol>
+</div>
+     </div>
+	 <div class="listing_details_2">
+	  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+	  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+	  content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+	  their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. It is a long established fact 
+	  that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has 
+	  a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many 
+	  desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover 
+	  many web sites still in their infancy.</p>
+	 </div>
+	 <div class="listing_details_3">
+    <h2>PROPERTY <a href="#">FEATURES</a></h2>
+	<div class="line width-21 clearfix">
+	 <div class="line_inner width-50 clearfix"></div>	
+	</div>
+   </div>
+   <div class="listing_details_4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores</p>
+   </div>
+     <div class="listing_details_5 clearfix">
+       <div class="col-sm-6 space_all">
+	    <div class="listing_details_6">
+		 <ul>
+		      <li><i class="fa fa-angle-double-right"></i>Property ID :<span class="tab_1"><a href="#">AB-010234</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Full Area :<span class="tab_1"><a href="#">520 Sqft</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Bedrooms :<span class="tab_1"><a href="#">6</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Bathrooms :<span class="tab_1"><a href="#">3</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Garages :<span class="tab_1"><a href="#">1</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Swimming Pool :<span class="tab_1"><a href="#">Yes</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Party Rooms :<span class="tab_1"><a href="#">Yes</a></span></li>
+		 </ul>
+		</div>
+	   </div>
+	   <div class="col-sm-6 space_all">
+	    <div class="listing_details_6">
+		 <ul>
+		      <li><i class="fa fa-angle-double-right"></i>Status :<span class="tab_1"><a href="#">For Sale</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Kitchen :<span class="tab_1"><a href="#">2</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>AC Rooms :<span class="tab_1"><a href="#">4</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Internet :<span class="tab_1"><a href="#">Yes</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Cable TV :<span class="tab_1"><a href="#">Yes</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Balcony :<span class="tab_1"><a href="#">Yes</a></span></li>
+			  <li><i class="fa fa-angle-double-right"></i>Pool :<span class="tab_1"><a href="#">Yes</a></span></li>
+		 </ul>
+		</div>
+	   </div>
+     </div>
+	 <div class="listing_details_7 clearfix">
+	  <h3><a href="#">Comment (3)</a></h3>
+       <div class="col-sm-2">
+	    <div class="listing_details_8">
+		 <a href="#"><img src="img/49.jpg" alt="#" class="img_responsive"></a>
+		</div>
+	   </div>
+       <div class="col-sm-9">
+	    <div class="listing_details_9">
+		 <h5>Fusce Nec</h5>
+		 <h6>3 hours ago</h6>
+		 <p>It is a long established fact that a reader will be content..</p>
+		</div>
+	   </div>	
+       <div class="col-sm-1">
+        <div class="listing_details_10">
+		 <a href="#"><i class="fa fa-reply"></i></a>
+		</div>	   
+	   </div>		   
+	 </div>
+	  <div class="listing_details_7 clearfix">
+       <div class="col-sm-2">
+	    <div class="listing_details_8">
+		 <a href="#"><img src="img/50.jpg" alt="#" class="img_responsive"></a>
+		</div>
+	   </div>
+       <div class="col-sm-9">
+	    <div class="listing_details_9">
+		 <h5>Nulla Quis</h5>
+		 <h6>2 hours ago</h6>
+		 <p>It is a long established fact that a reader will be content..</p>
+		</div>
+	   </div>	
+       <div class="col-sm-1">
+        <div class="listing_details_10">
+		 <a href="#"><i class="fa fa-reply"></i></a>
+		</div>	   
+	   </div>		   
+	 </div>
+	  <div class="listing_details_7 clearfix">
+       <div class="col-sm-2">
+	    <div class="listing_details_8">
+		 <a href="#"><img src="img/51.jpg" alt="#" class="img_responsive"></a>
+		</div>
+	   </div>
+       <div class="col-sm-9">
+	    <div class="listing_details_9">
+		 <h5>Sed Augue</h5>
+		 <h6>5 hours ago</h6>
+		 <p>It is a long established fact that a reader will be content..</p>
+		</div>
+	   </div>	
+       <div class="col-sm-1">
+        <div class="listing_details_10">
+		 <a href="#"><i class="fa fa-reply"></i></a>
+		</div>	   
+	   </div>		   
+	 </div>
+	 <div class="listing_details_11 clearfix">
+	  <div class="col-sm-12">
+	 <div class="col-sm-12 space_all">
+	  <div class="col-sm-4 space_all">
+	   <div class="listing_details_11">
+	    <input type="text" class="form-control" placeholder="Name">
+	   </div>
+	  </div>
+	  <div class="col-sm-4 space_all">
+	   <div class="listing_details_11">
+	    <input type="text" class="form-control" placeholder="Email">
+	   </div>
+	  </div>
+	  <div class="col-sm-4 space_all">
+	   <div class="listing_details_11">
+	    <input type="text" class="form-control" placeholder="Phone">
+	   </div>
+	  </div>
+	 </div>
+	 <div class="col-sm-12 space_all">
+	  <div class="listing_details_12">
+	   <textarea placeholder="Message" class="form-control"></textarea>
+	  </div>
+	 </div>
+	 <div class="col-sm-12 space_all">
+	  <div class="listing_details_13">
+	   <p><a href="#">SEND MESSAGE</a></p>
+	  </div>
+	 </div>
+	</div>
+	 </div>
+    </div>
+	<div class="col-sm-4">
+	 <div class="listing_details_14">
+	  <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search Here.....">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+	 </div>
+	 <div class="listing_details_15">
+	  <h3>CATEGORIES</h3>
+	  <div class="line width-40 clearfix">
+	 <div class="line_inner width-70 clearfix"></div>	
+	 </div>
+	 <div class="listing_details_16">
+	  <ul>
+	      <li class="list_1"><a href="#">NEW BUILDING </a> <span class="tab_2">(10)</span></li>
+		  <li class="list_1"><a href="#">MODERN DESIGN </a> <span class="tab_2">(08)</span></li>
+		  <li class="list_1"><a href="#">BEST DESIGN </a> <span class="tab_2">(29)</span></li>
+		  <li class="list_1"><a href="#">POPULAR DESIGN </a> <span class="tab_2">(33)</span></li>
+		  <li class="list_1"><a href="#">STRONG BUILDING </a> <span class="tab_2">(23)</span></li>
+		  <li class="list_1"><a href="#">OLD DESIGN </a> <span class="tab_2">(22)</span></li>
+		  <li class="list_1"><a href="#">POPULAR DESIGN </a> <span class="tab_2">(29)</span></li>
+		  <li><a href="#">BEST DESIGN </a> <span class="tab_2">(11)</span></li>
+	  </ul>
+	 </div>
+	 <div class="listing_details_17">
+	  <h3>LATEST NEWS</h3>
+	  <div class="line width-40 clearfix">
+	 <div class="line_inner width-70 clearfix"></div>
+	 </div>
+	 <div class="listing_details_18 clearfix">
+	  <div class="col-sm-3 space_all">
+	   <div class="listing_details_19">
+	    <a href="#"><img src="img/52.jpg"></a>
+	   </div>
+	  </div>
+	  <div class="col-sm-8 space_all">
+	   <div class="listing_details_20">
+	    <h4><a href="#">Popular building design</a></h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	   </div>
+	  </div>
+	  <div class="col-sm-1"></div>
+	 </div>
+	 <div class="listing_details_18 clearfix">
+	  <div class="col-sm-3 space_all">
+	   <div class="listing_details_19">
+	    <a href="#"><img src="img/53.jpg"></a>
+	   </div>
+	  </div>
+	  <div class="col-sm-8 space_all">
+	   <div class="listing_details_20">
+	    <h4><a href="#">Popular building design</a></h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	   </div>
+	  </div>
+	  <div class="col-sm-1"></div>
+	 </div>
+	 <div class="listing_details_18 clearfix">
+	  <div class="col-sm-3 space_all">
+	   <div class="listing_details_19">
+	    <a href="#"><img src="img/54.jpg"></a>
+	   </div>
+	  </div>
+	  <div class="col-sm-8 space_all">
+	   <div class="listing_details_20">
+	    <h4><a href="#">Popular building design</a></h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	   </div>
+	  </div>
+	  <div class="col-sm-1"></div>
+	 </div>
+	 <div class="listing_details_21">
+	   <ul>
+	        <li><a href="#">Responsive</a></li>
+			<li><a href="#">Web Design</a></li>
+			<li><a href="#">Best</a></li>
+	   </ul>
+	 </div>
+	 <div class="listing_details_21">
+	   <ul>
+	        <li><a href="#">Modern Design</a></li>
+			<li><a href="#">Popular</a></li>
+	   </ul>
+	 </div>
+	 <div class="listing_details_21">
+	   <ul>
+	        <li><a href="#">Servar</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">Jquery</a></li>
+	   </ul>
+	 </div>
+	 <div class="listing_details_22">
+	  <a href="#"><img src="img/55.jpg" alt="abc" class="img_responsive"></a>
+	 </div>
+	 <div class="listing_details_22">
+	  <a href="#"><img src="img/56.jpg" alt="abc" class="img_responsive"></a>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="footer">
+ <div class="footer_inner clearfix">
+  <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+	 <div class="col-sm-3">
+	 <div class="footer_main clearfix">
+	  <div class="footer_1">
+	    <h3>FUSCE NEC TELLUS</h3>
+	    <p>11/4 Lacinia:</p>
+	  </div>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/44.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_3">
+	    <p>+2-123-456-7890</p>
+	   </div>
+	  </div>
+	 </div>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/45.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_3">
+	    <p>+2-123-456-7890</p>
+	   </div>
+	  </div>
+	 </div>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/46.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_3">
+	    <p>+2-123-456-7890</p>
+	   </div>
+	  </div>
+	 </div>
+	 </div>
+	 <div class="footer_4">
+	  <p><i class="fa fa-skype"></i>Conubia_India</p>
+	  <h5><i class="fa fa-envelope"></i><a href="#">info@gmail.com</a></h5>
+	 </div>
+	 <div class="footer_5">
+	 <h5><a href="#">CONUBIA NOSTRA</a></h5>
+	 </div>
+	</div>
+	<div class="col-sm-6">
+	 <div class="footer_9 clearfix">
+	  <div class="colsm-12 space_all">
+	  <div class="col-sm-6 space_all">
+	   <div class="footer_6">
+	    <h3>LACINIA</h3>
+		<ul>
+		    <li><a href="#">Curabitursodales Ligula</a></li>
+			<li><a href="#">Dignissim Lacinia</a></li>
+			<li><a href="#">Vestibulum Lacinia Arcu Eget</a></li>
+			<li><a href="#">Fusce Nec Tellus Sed Augue</a></li>
+			<li><a href="#">Cursus Ante Dapibus</a></li>
+			<li><a href="#">Praesent Mauris</a></li>
+			<li><a href="#">Curabitursodales</a></li>
+			<li><a href="#">Dignissim Lacinia</a></li>
+		</ul>
+	   </div>
+	  </div>
+	  <div class="col-sm-6 space_all">
+	   <div class="footer_6">
+	    <h3>PARTNERS DAPIBUS</h3>
+		<ul>
+		    <li><a href="#">Dignissim Lacinia</a></li>
+			<li><a href="#">Curabitursodales</a></li>
+			<li><a href="#">Praesent Mauris</a></li>
+			<li><a href="#">Cursus Ante Dapibus</a></li>
+			<li><a href="#">Fusce Nec Tellus Sed Augue</a></li>
+			<li><a href="#">Vestibulum Lacinia Arcu Eget</a></li>
+			<li><a href="#">Dignissim Lacinia</a></li>
+		</ul>
+	   </div>
+	  </div>
+	 </div>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="footer_7">
+	  <h3>CONUBIA NOSTRA</h3>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/44.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_8">
+	    <p>12345 torquent per conubia inceptos.Curabitursodales</p>
+	   </div>
+	  </div>
+	 </div>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/45.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_8">
+	    <p>Fusce nec tellus sed augue semper porta </p>
+	   </div>
+	  </div>
+	 </div>
+	  <div class="col-sm-12 space_all">
+	  <div class="col-sm-1 space_all">
+	   <div class="footer_2">
+	    <p><img src="img/46.jpg"></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 space_all">
+	   <div class="footer_8">
+	    <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at</p>
+	   </div>
+	  </div>
+	 </div>
+	  <div class="col-sm-12 space_all">
+	   <div class="footer_14 clearfix">
+	    <div class="col-sm-8 space_all">
+	   <div class="footer_11">
+	    <p>Dapibus Lacinia</p>
+	   </div>
+	  </div>
+	    <div class="col-sm-2 space_all">
+	   <div class="footer_12">
+	    <p><i class="fa fa-picture-o"></i></p>
+	   </div>
+	  </div>
+	    <div class="col-sm-2 space_all">
+	  <div class="footer_13">
+	   <p><i class="fa fa-book"></i></p>
+	  </div>
+	  </div>
+	    </div>
+	   </div>
+	  <div class="col-sm-12 space_all">
+	   <div class="footer_15 clearfix">
+	     <ul> 
+		       <li><a href="#">Blog Post</a></li>
+			   <li>!</li>
+			   <li><a href="#">Contact Us</a></li>
+			   <li>!</li>
+			   <li><a href="#">Testimonials</a></li>
+		 </ul>
+	    </div>
+	   </div>
+	  </div>
+	</div>
+    </div>
+   <div class="col-sm-12 space_all">
+    <div class="col-sm-3"></div>
+	<div class="col-sm-6">
+	 <div class="footer_10">
+	  <ul>  
+	      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+		  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		  <li><a href="#"><i class="fa fa-camera"></i></a></li>
+		  <li><a href="#"><i class="fa fa-paragraph"></i></a></li>
+	  </ul>
+	  <p class="text-center">© 2013 Your Website Name. All Rights Reserved. Design by<a href="http://www.TemplateOnWeb.com"> Template On Web</a> </p>
+	 </div>
+	</div>
+	<div class="col-sm-3"></div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<script type="text/javascript">
+	/*
+Credits:
+https://github.com/marcaube/bootstrap-magnify
+*/
+
+
+!function ($) {
+
+    "use strict"; // jshint ;_;
+
+
+    /* MAGNIFY PUBLIC CLASS DEFINITION
+     * =============================== */
+
+    var Magnify = function (element, options) {
+        this.init('magnify', element, options)
+    }
+
+    Magnify.prototype = {
+
+        constructor: Magnify
+
+        , init: function (type, element, options) {
+            var event = 'mousemove'
+                , eventOut = 'mouseleave';
+
+            this.type = type
+            this.$element = $(element)
+            this.options = this.getOptions(options)
+            this.nativeWidth = 0
+            this.nativeHeight = 0
+
+            this.$element.wrap('<div class="magnify" \>');
+            this.$element.parent('.magnify').append('<div class="magnify-large" \>');
+            this.$element.siblings(".magnify-large").css("background","url('" + this.$element.attr("src") + "') no-repeat");
+
+            this.$element.parent('.magnify').on(event + '.' + this.type, $.proxy(this.check, this));
+            this.$element.parent('.magnify').on(eventOut + '.' + this.type, $.proxy(this.check, this));
+        }
+
+        , getOptions: function (options) {
+            options = $.extend({}, $.fn[this.type].defaults, options, this.$element.data())
+
+            if (options.delay && typeof options.delay == 'number') {
+                options.delay = {
+                    show: options.delay
+                    , hide: options.delay
+                }
+            }
+
+            return options
+        }
+
+        , check: function (e) {
+            var container = $(e.currentTarget);
+            var self = container.children('img');
+            var mag = container.children(".magnify-large");
+
+            // Get the native dimensions of the image
+            if(!this.nativeWidth && !this.nativeHeight) {
+                var image = new Image();
+                image.src = self.attr("src");
+
+                this.nativeWidth = image.width;
+                this.nativeHeight = image.height;
+
+            } else {
+
+                var magnifyOffset = container.offset();
+                var mx = e.pageX - magnifyOffset.left;
+                var my = e.pageY - magnifyOffset.top;
+
+                if (mx < container.width() && my < container.height() && mx > 0 && my > 0) {
+                    mag.fadeIn(100);
+                } else {
+                    mag.fadeOut(100);
+                }
+
+                if(mag.is(":visible"))
+                {
+                    var rx = Math.round(mx/container.width()*this.nativeWidth - mag.width()/2)*-1;
+                    var ry = Math.round(my/container.height()*this.nativeHeight - mag.height()/2)*-1;
+                    var bgp = rx + "px " + ry + "px";
+
+                    var px = mx - mag.width()/2;
+                    var py = my - mag.height()/2;
+
+                    mag.css({left: px, top: py, backgroundPosition: bgp});
+                }
+            }
+
+        }
+    }
+
+
+    /* MAGNIFY PLUGIN DEFINITION
+     * ========================= */
+
+    $.fn.magnify = function ( option ) {
+        return this.each(function () {
+            var $this = $(this)
+                , data = $this.data('magnify')
+                , options = typeof option == 'object' && option
+            if (!data) $this.data('tooltip', (data = new Magnify(this, options)))
+            if (typeof option == 'string') data[option]()
+        })
+    }
+
+    $.fn.magnify.Constructor = Magnify
+
+    $.fn.magnify.defaults = {
+        delay: 0
+    }
+
+
+    /* MAGNIFY DATA-API
+     * ================ */
+
+    $(window).on('load', function () {
+        $('[data-toggle="magnify"]').each(function () {
+            var $mag = $(this);
+            $mag.magnify()
+        })
+    })
+
+} ( window.jQuery );
+	</script>
+<script>
+$(document).ready(function(){
+	/*****Fixed Menu******/
+	var secondaryNav = $('.cd-secondary-nav'),
+	   secondaryNavTopPosition = secondaryNav.offset().top;
+		$(window).on('scroll', function(){
+			if($(window).scrollTop() > secondaryNavTopPosition ) {
+				secondaryNav.addClass('is-fixed');	
+			} else {
+				secondaryNav.removeClass('is-fixed');
+			}
+		});	
+		
+});
+</script>
+</body>
+</html>
